@@ -2,10 +2,11 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
+require("dotenv").config();
 
 
 mongoose
-  .connect("mongodb+srv://shafyali433:unlimited37@cluster0.2qkzz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+  .connect(process.env.Mongo_Url)
   .then(() => console.log("MongoDB connected"))
   .catch((error) => console.log(error));
 
@@ -29,4 +30,4 @@ app.use(
 
 app.use(cookieParser());
 app.use(express.json());
-app.listen(5000, () => console.log(`Server is now running on por`));
+app.listen(PORT, () => console.log(`Server is now running on port ${PORT}`));
