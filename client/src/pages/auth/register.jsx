@@ -6,13 +6,14 @@ import { useState } from "react"
 import { useDispatch } from "react-redux"
 import { Link, useNavigate } from "react-router-dom"
 
-const AuthRegister = () => {
 
-  const initialState = {
-    userName:"",
-    email: "",
-    password: "",
-  }
+
+const initialState = {
+  userName:"",
+  email: "",
+  password: "",
+}
+const AuthRegister = () => {
 
 
   const [formData,setFormData] = useState(initialState)

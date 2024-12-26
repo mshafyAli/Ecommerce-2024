@@ -7,13 +7,14 @@ import { useDispatch } from "react-redux"
 import { Link } from "react-router-dom"
 
 
+
+
+const initialState = {
+  email: "",
+  password: "",
+}
 const AuthLogin = () => {
 
-  const initialState = {
-    userName:"",
-    email: "",
-    password: "",
-  }
 
 
   const [formData,setFormData] = useState(initialState)

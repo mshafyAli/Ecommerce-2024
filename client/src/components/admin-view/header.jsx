@@ -1,7 +1,7 @@
 import { AlignJustify, LogOut } from "lucide-react"
 import { Button } from "../ui/button"
 
-const AdminHeader = ({setOpen}) => {
+const AdminHeader = ({ setOpen }) => {
   return (
     <header className="flex items-center justify-between px-4 py-3 bg-background border-b">
 
